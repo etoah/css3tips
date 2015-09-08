@@ -1,6 +1,7 @@
 .l-tips
 {
     display: inline-block;
+    color: #5b6469;
 }
 .l-tips+p
 {
@@ -26,6 +27,15 @@
     font-family: Microsoft YaHei, "Î¢ÈíÑÅºÚ";
 
 }
+.l-tips:hover+p img
+{
+    width: 100%;
+}
+.l-tips:hover+p a, .l-tips:hover+p a:visited {
+    outline: none;
+    color: #389dc1;
+}
+
 
 .l-tips:hover+p:before,.tri
 {
