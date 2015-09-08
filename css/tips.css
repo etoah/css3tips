@@ -2,6 +2,14 @@
 {
     display: inline-block;
     color: #5b6469;
+
+    cursor: pointer;
+}
+
+.l-tips:after
+{
+
+
 }
 .l-tips+p
 {
@@ -15,9 +23,10 @@
     display: block;
 
     padding: 20px;
-    border-radius: 3px;
+    border-radius: 5px;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
     max-width: 500px;
+    z-index: 999;
 
     background-color: #1E2021;
     color: #FFF;
@@ -27,6 +36,12 @@
     font-family: Microsoft YaHei, "Î¢ÈíÑÅºÚ";
 
 }
+.l-tips:hover+p:hover
+{
+    display: block;
+}
+
+
 .l-tips:hover+p img
 {
     width: 100%;
@@ -34,14 +49,15 @@
 .l-tips:hover+p a, .l-tips:hover+p a:visited {
     outline: none;
     color: #389dc1;
+    text-decoration: none;
 }
 
 
-.l-tips:hover+p:before,.tri
+.l-tips:hover+p:before
 {
     content:"";
     position: absolute;
-    top:-10px;
+    top:-12px;
     display: block;
     width: 0;
     height: 0;
