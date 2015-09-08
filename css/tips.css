@@ -1,0 +1,40 @@
+.l-tips
+{
+    display: inline-block;
+}
+.l-tips+p
+{
+    display: none;
+}
+
+
+.l-tips:hover+p
+{
+    position: absolute;
+    display: block;
+
+    padding: 20px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+
+    background-color: #1E2021;
+    color: #FFF;
+    font-size: 13px;
+    line-height: 1.6;
+    text-align: left;
+    font-family: Microsoft YaHei, "Î¢ÈíÑÅºÚ";
+
+}
+
+.l-tips:hover+p:before,.tri
+{
+    content:"";
+    position: absolute;
+    top:-10px;
+    display: block;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-bottom-color: #1E2021;
+}
